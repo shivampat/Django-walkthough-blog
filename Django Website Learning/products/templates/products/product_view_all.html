@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for object in objects %}
+    <p>{{object.id}} - <a href="{{object.get_absolute_url}}">{{object.title}}</a>: {{object.description}}</p>
+{% endfor %}
+
+
+
+{% endblock %}

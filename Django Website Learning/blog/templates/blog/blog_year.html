@@ -1,0 +1,9 @@
+{% extends 'base_blog.html' %}
+
+{% block content %}
+<h1>All posts in {{year}}</h1>
+{% for blogpost in blogposts %}
+<h2><a href="../{{blogpost.id}}">{{blogpost.blogTitle}} - {{blogpost.blogDateTime}}</a></h2>
+<p>{{blogpost.blogText}}</p>
+{% endfor %}
+{% endblock %}

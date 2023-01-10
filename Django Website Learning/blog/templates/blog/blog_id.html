@@ -1,0 +1,7 @@
+{% extends 'base_blog.html' %}
+
+{% block content %}
+<h1>Post ID: {{blogpost.id}}</h1>
+<h2>{{blogpost.blogTitle}} - {{blogpost.blogDateTime}}</h2>
+<p>{{blogpost.blogText}}</p>
+{% endblock %}

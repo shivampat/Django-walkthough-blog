@@ -1,0 +1,11 @@
+{% extends 'base_blog.html' %}
+{% block content %}
+
+<p>This is the start of my blog</p>
+
+{% for blogpost in blogposts %}
+<h1><a href="{{blogpost.id}}">{{blogpost.blogTitle}} - {{blogpost.blogDateTime}}</a></h1>
+<p>{{blogpost.blogText}}</p>
+{% endfor %}
+
+{% endblock %}
